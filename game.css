@@ -46,3 +46,5 @@
 .app[data-page="mandir"] .catalog .item img{width:100%;height:84px;object-fit:contain;object-position:center}
 .app[data-page="mandir"] .catalog .item{min-width:0}
 .app[data-page="mandir"] #screen{padding-bottom:110px}
+
+.volume-slider{width:44%;min-width:80px;accent-color:#8a399c;cursor:pointer;touch-action:pan-y}.switchrow label{max-width:53%;font-size:14px}

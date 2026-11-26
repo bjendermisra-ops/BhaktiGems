@@ -1,0 +1,1 @@
+Original instrumental game music, composed and synthesized for Bhakti Gems. 112 BPM, 16 bars, mono MP3. Flute-like lead, plucked strings, tabla-inspired percussion and metallic kartal accents. No sampled or third-party recording.
