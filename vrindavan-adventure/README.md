@@ -1,0 +1,3 @@
+# Vrindavan Adventure — Lotus Quest
+
+A self-contained HTML5 canvas platform adventure. 12 deterministic layouts in three chapters. Original generated hero animation atlas and terrain, shared Bhakti Gems transparent artwork copied into the game folder, procedural animated parallax scenery, music, mobile controls, local save, and offline cache. No account or backend required. Controls: hold arrows, jump with Up or Space, escape pauses. On touch, hold direction + jump. Progress key va-save-v1 is separate.
