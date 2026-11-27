@@ -10,7 +10,7 @@ function item(type,x,y){items.push({id:items.length,type,x,y,taken:false})}
 const count=13+Math.floor((n-1)/4);
 for(let i=0;i<count;i++){
  let width=i===0?242:i===count-1?244:Math.round(126+random()*72);
- if(i){let gap=36+Math.round(random()*(26+chapter*10));let delta=Math.round((random()-.5)*108);if(i%4===0)delta=-28;let next=clamp(y+delta,360,535);if(i===count-1)next=480;
+ if(i){let gap=36+Math.round(random()*(26+chapter*10));let delta=Math.round((random()-.5)*108);if(i%4===0)delta=-28;if(n===1&&i<=5)delta=[0,-48,32,-54,43,-36][i];let next=clamp(y+delta,360,535);if(i===count-1)next=480;
  // Ensure each mandatory jump is within the physics envelope; bridges cover selected wide gaps.
  x=prev.x+prev.w+gap;
  if(i%5===0){add({x:prev.x+prev.w-1,y:Math.max(prev.y,next),w:gap+2,kind:'bridge',main:false})}
@@ -21,7 +21,7 @@ for(let i=0;i<count;i++){
  if(i===6)item('pot',x+width*.22,y-38);
  if(p.checkpoint){decor.push({type:'cow',x:x+width*.2,y,p:p.id});item('seva',x+width*.27,y-42)}
  else if(i>1&&i<count-1&&i%3===1&&n>=2)hazards.push({x:x+width*.77,y:y-19,w:25,h:19});
- if(i===2||i===7||i===11){let yy=y-96;add({x:x+width*.28,y:yy,w:84,kind:'island',main:false});item('coin',x+width*.5,yy-32)}
+ if(i===1||i===7||i===11){let yy=y-96;add({x:x+width*.28,y:yy,w:84,kind:'island',main:false});item('coin',x+width*.5,yy-32)}
  if(i%2===0)decor.push({type:'flowers',x:x+width*.12,y,p:p.id});
  if(i%3===2)decor.push({type:'peacock',x:x+width*.87,y,p:p.id});
 }
