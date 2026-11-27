@@ -4,3 +4,6 @@
 
 /* V1.2: cleaner mobile HUD, GPU-friendly controls, no live CSS blur. */
 #world{image-rendering:auto}.control{will-change:transform;transition:transform .10s ease,background-color .10s ease;backdrop-filter:none!important}.control.pressed{transform:scale(.92)}.hud .stat{backdrop-filter:none!important}.vignette{background:linear-gradient(#17351e66,transparent 20%,transparent 82%,#142d3855)}.avatar{background-size:105px 34px}.hud .goal{box-shadow:0 3px 0 #ac7536,0 5px 10px #39281844}
+
+/* High contrast game controls and score. */
+.control{border-width:2px;background:#263e4a70;box-shadow:inset 0 0 0 3px #ffffff16,0 5px 14px #0d392b40}.control.pressed{background:#f4c97565}.hud .stat{border-color:#ffe7ad}.hud .goal{font-size:clamp(14px,4vw,18px)}
